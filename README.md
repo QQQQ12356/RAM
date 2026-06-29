@@ -148,16 +148,6 @@ The output names include compression settings and the actual number of evaluated
 | `NUM_GPUS` | `1` | Number of `torchrun` workers. |
 | `NUM_SAMPLES` | `1` | Evaluation sample limit. |
 
-## Checkpoints and Tests
-
-Training writes Hugging Face Trainer `checkpoint-*` directories and final weights under `OUTPUT_DIR`. Inference accepts either SafeTensors or PyTorch binary checkpoints and loads them non-strictly to support alternate checkpoint key layouts.
-
-Run the inference script:
-
-```bash
-bash test.sh
-```
-
 ## BibTeX
 
 If you find this repository useful, please cite the paper:
